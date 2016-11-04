@@ -50,7 +50,7 @@ function tamaño() {
     
 
     if (105 <= $("body").width() && 566 >= $("body").width()) {
-        for (var y = 1; y <= 4; y++) {
+        for (var y = 1; y <= 8; y++) {
             $("#tamaño" + y).removeClass("col-sm3");
             $("#tamaño" + y).removeClass("col-xs-3");
             $("#tamaño" + y).removeClass("col-xs-4");
@@ -62,7 +62,7 @@ function tamaño() {
         }
     }
     if (567 <= $("body").width() && 990 >= $("body").width()) {
-        for (var y = 1; y <= 4; y++) {
+        for (var y = 1; y <= 8; y++) {
             $("#tamaño" + y).removeClass("col-sm3");
             $("#tamaño" + y).removeClass("col-xs-3");
             $("#tamaño" + y).removeClass("col-xs-4");
@@ -74,8 +74,8 @@ function tamaño() {
             $("#tamaño" + y).addClass("col-sm4");
         }
     }
-    if (991 <= $("body").width() && 1190 >= $("body").width()) {
-        for (var y = 1; y <= 4; y++) {
+    if (991 <= $("body").width() ) {
+        for (var y = 1; y <= 8; y++) {
             $("#tamaño" + y).removeClass("col-sm3");
             $("#tamaño" + y).removeClass("col-xs-3");
             $("#tamaño" + y).removeClass("col-xs-4");
