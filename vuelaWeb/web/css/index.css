@@ -28,46 +28,47 @@
 /* Landscape layout (with min-width) */
 
  
-
-#image{
-    width: 100%;
-    height: 120px;
-    border: white 5px solid;
     
-     background-image:url("../img/boku.png");
+.image{
+    width: 100%;
+    height: 400px;
+    border: black 2px solid;
+    
+     /*background-image:url("../img/boku.png");*/
      
-        -webkit-background-size: 100% 100%;           /* Safari 3.0 */
-     -moz-background-size: 100% 100%;           /* Gecko 1.9.2 (Firefox 3.6) */
-       -o-background-size: 100% 100%;           /* Opera 9.5 */
-          background-size: 100% 100%;           /* Gecko 2.0 (Firefox 4.0) and other CSS3-compliant browsers */
+        -webkit-background-size: 100% 100%;     
+     -moz-background-size: 100% 100%;         
+       -o-background-size: 100% 100%;           
+          background-size: 100% 100%;         
  
-  -moz-border-image: url("../img/boku.png") 0;   
+  /*-moz-border-image: url("../img/boku.png") 0;*/   
 
 }
 body{
-     background-image:url("../img/wall.png");
+    /*background-image:url("../img/wall.png");*/
      
-    
+    background-color: black;
 }
 
-#image:hover {
+.image:hover {
+    transition-duration: 2s;
      position: relative;
       z-index: 1;
-       -webkit-transform: scale(1.8);
-    -moz-transform: scale(1.8);
-    -o-transform: scale(1.8);
-    -ms-transform: scale(1.8);
-    transform: scale(1.8);
+       -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.03);
     align-content: flex-end;
      content: "Capítulo ";
      visibility: visible;
-     p{
-    color: white;
-    visibility: visible;
     
-        }
 }
 p{
-    color: white;
+    color: #5dc2f1 ;
+    font-weight: bold;
     font-size: 20px;
+    display: inline-block;
+    text-align: center;
+    margin-top: 50%;
 }
