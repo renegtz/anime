@@ -64,7 +64,21 @@ body{
      visibility: visible;
     
 }
-
+.imagecam{
+    
+       transition-duration: 2s;
+     position: relative;
+      z-index: 1;
+       -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.05);
+    align-content: flex-end;
+     content: "Capítulo ";
+     visibility: visible;
+    
+}
 p{
     position: absolute;
       z-index: 3;

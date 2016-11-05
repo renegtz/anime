@@ -9,6 +9,7 @@ function mostrar(y) {
         $("#image"+y).css({"-webkit-filter": "grayscale(100%)"});
         $("#text" + y).show();
         $("#text" + y).css({"transition-property": "font-size", "transition-duration": "1s", " transition-delay": "1s", "font-size": "41px", "color": "#5dc2f1"});
+   $( "#image" ).hide( "Fade", 50, 1000 );
     });
     
   
@@ -18,7 +19,7 @@ function imagenes() {
     var x = 0;
     $(document).ready(function () {
         for (var y = 1; y <= tamañoAnime; y++) {
-            var div1 = $( " <div id='tamaño"+y+"' class='col-xs-6  col-sm-3 ' onmousemove='mostrar("+y+")' onmouseout='invisible()'><div><p   id='text"+y+"'>boku no hero academy #12</p>  <div id='image"+y+"' class='image'> </div> </div></div>" );
+            var div1 = $( " <div id='tamaño"+y+"' class='col-xs-6  col-sm-3 ' onmousemove='mostrar("+y+")' onmouseout='invisible()'><div><p  onmousemove='imagecambio("+y+")' id='text"+y+"'>boku no hero academy #12</p>  <div id='image"+y+"' class='image'> </div> </div></div>" );
             
             $( ".row" ).append( div1 );
             $("#text" + y).html(NombreAnime[x]);
@@ -30,14 +31,19 @@ function imagenes() {
         invisible();
     });
 }
-
+function imagecambio(y){
+     $(document).ready(function () {
+      $("#image" + y).addClass("imagecam");
+      
+        });
+}
 function invisible() {
     $(document).ready(function () {
         for (var y = 1; y <= tamañoAnime; y++) {
             $("#text" + y).css({"font-size": "38px"});
             $("#text" + y).hide();
             $("#image"+y).css({"-webkit-filter": "grayscale(0%)","transition-duration": "2s"});
-
+               $("#image" + y).removeClass("imagecam");
         }
 
     });
