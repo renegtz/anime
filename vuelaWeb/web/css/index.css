@@ -54,21 +54,26 @@ body{
     transition-duration: 2s;
      position: relative;
       z-index: 1;
-       -webkit-transform: scale(1.1);
-    -moz-transform: scale(1.1);
-    -o-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    transform: scale(1.03);
+       -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.05);
     align-content: flex-end;
      content: "Capítulo ";
      visibility: visible;
     
 }
+
 p{
+    position: absolute;
+      z-index: 3;
     color: #5dc2f1 ;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 35px;
     display: inline-block;
     text-align: center;
-    margin-top: 50%;
+    align-content: center;
+    
+    margin-top: 40%;
 }
