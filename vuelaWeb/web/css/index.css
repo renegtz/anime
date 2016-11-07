@@ -91,3 +91,19 @@ p{
     
     margin-top: 40%;
 }
+#video{
+    
+     height: 0px;
+    
+}
+#buscar2{
+    
+     width: 0px;
+   height: 45px;
+   background-color: black;
+   visibility: hidden;
+   color: white;
+   border-color: black;
+     
+}
+

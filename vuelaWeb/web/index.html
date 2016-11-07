@@ -6,10 +6,12 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title>Anime</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="js/jquery-3.1.1.min.js"></script>
+        <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
 
         <script src="js/sweetalert.min.js"></script>
         <link rel="stylesheet" type="text/css" href="css/sweetalert.css">
@@ -17,9 +19,9 @@ and open the template in the editor.
 
         <link rel="stylesheet" type="text/css" href="css/index.css">
         <script src="js/index.js"></script>
-         <script src="js/jquery-ui.js"></script>
+        <script src="jqueryui/jquery-ui.js"></script>
 
-
+        <script src="jqueryui/jquery-ui.min.js"></script>
 
     </head>
 
@@ -28,18 +30,19 @@ and open the template in the editor.
 
         <div class="container-fluid">
 
-            <div style="height: 200px">
+            <div style="height:100px">
+                <div class="col-xs-4  col-sm-5"></div>
 
+                <div class="col-xs-2 col-sm-1 " onclick="inicio()">   <a class="w3-black w3-xxxlarge"><i class="fa fa-home"></i></a></div>
+                <div class="col-xs-2  col-sm-5 " onmousemove="buscar()" onmouseout="EsconderBuscar()">  <a  ><i   class=" w3-black fa fa-search w3-xxxlarge"></i></a>   <input id="buscar2" type="text" name="firstname" placeholder="buscar"></div> 
 
             </div>
-
             <div class="row" >
-
-              
-
             </div>
-           
         </div>
+
+
+
 
     </body>
 </html>
