@@ -4,11 +4,16 @@ To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
-<html>
+<html ng-app="ToDoList">
     <head>
         <title>Anime</title>
         <meta charset="UTF-8">
+        
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+        <script src="js/angular-local-storage.min.js"></script>
+                <script src="js/controller.js"></script>
+
         <script src="js/jquery-3.1.1.min.js"></script>
         <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
@@ -21,25 +26,36 @@ and open the template in the editor.
         <script src="js/index.js"></script>
         <script src="jqueryui/jquery-ui.js"></script>
 
-        <script src="jqueryui/jquery-ui.min.js"></script>
+       
 
     </head>
-
-
-    <body>
+ <body ng-controller="ToDoController">
 
         <div class="container-fluid">
 
             <div style="height:100px">
                 <div class="col-xs-4  col-sm-5"></div>
-
                 <div class="col-xs-2 col-sm-1 " onclick="inicio()">   <a class="w3-black w3-xxxlarge"><i class="fa fa-home"></i></a></div>
                 <div class="col-xs-2  col-sm-5 " onmousemove="buscar()" onmouseout="EsconderBuscar()">  <a  ><i   class=" w3-black fa fa-search w3-xxxlarge"></i></a>   <input id="buscar2" type="text" name="firstname" placeholder="buscar"></div> 
-
             </div>
             <div class="row" >
             </div>
         </div>
+
+
+            <ul>
+                <li ng-repeat="actividad in todo">
+                    {{actividad.descripcion}}-
+                    {{actividad.user}}
+                </li>
+            </ul>
+
+
+            <form ng-submit="addActv()">
+                <input type="text" ng-model="newActv.descripcion">
+                <input type="text" ng-model="newActv.user">
+                <input type="submit" value="Guardar" >
+            </form>
 
 
 
